@@ -1,5 +1,24 @@
 # smaho-jyuden
 
+## 差し込み口の知識はものすごく重要。
+現時点では、Type-C、microUSB、Lightning(apple独自規格)が多い。アップル製品はLightningを勧める。
+
+## Type-C
+![Type-C](typec_cable.jpg)
+![Type-C](typec_cable2.jpg)
+![Type-C](typec_cable3.jpg)
+
+## Lightning
+![Lightning](lightning_cable.jpg)
+![Lightning](lightning_cable2.jpg)
+![Lightning](lightning_cable3.jpg)
+
+## microUSB
+![microUSB](microusb_cable.jpg)
+![microUSB](microusb_cable2.jpg)
+![microUSB](microusb_cable3.jpg)
+
+
 ## スマホ充電の草案
 
 1. 名前と特徴と発売日と価格帯。
