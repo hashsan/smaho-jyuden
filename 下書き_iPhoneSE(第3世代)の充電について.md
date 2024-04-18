@@ -1,4 +1,4 @@
-## ここはiPhoneSE第3世代の充電についてです。
+## ここはiPhoneSE(第3世代)の充電についてです。
 iPhone SE系は、
 
 - iPhone SE(第3世代)
