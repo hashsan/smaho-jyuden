@@ -1,5 +1,17 @@
 <?php
 
+//ダッシュボードワンカラム
+function so_screen_layout_columns( $columns ) {
+$columns['dashboard'] = 1;
+return $columns;
+}
+add_filter( 'screen_layout_columns', 'so_screen_layout_columns' );
+function so_screen_layout_dashboard() {
+return 1;
+}
+add_filter( 'get_user_option_screen_layout_dashboard', 'so_screen_layout_dashboard' );
+
+
 //style.cssを読み込む
 function enqueue_theme_styles() {
     wp_enqueue_style('theme-style', get_stylesheet_uri());
