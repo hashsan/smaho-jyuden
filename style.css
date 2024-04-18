@@ -11,43 +11,140 @@ Tags: tag1, tag2, tag3
 Text Domain: your-theme-textdomain
 */
 
-/* 以下にCSSスタイルを記述します */
 
-/* Bodyのデフォルトスタイル */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+
+:root{
+  --theme-color:#F5CB2B;
+  --mark-color:#f26;
+  --sys-color:#333;
+}
+*{margin:0;padding:0;font-weight:bold;}
+/*always use .box*/
+html{font-size:18px;}
+h1,h2,h3,h4,h5{font-size:24px;}
+.mark,mark{background:#f26;}
+
+header p,
+header h1{
+  display:inline;
+  background:var(--theme-color);
+}
+header .tags{
+  margin-top:2rem;
 }
 
-/* ヘッダーのスタイル */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  justify-content:center;
+  max-width:400px;
+  margin:auto;
+}
+.tags a{
+  cursor:pointer;
+  display:inline-block;  
+  border:2px solid var(--mark-color);
+  background:var(--theme-color);  
+  padding:2px 8px;
+  transition:0.7s;
+}
+.tags a:hover{
+  background:var(--mark-color);
+}
+.tags a:active{
+  opacity:0.6;
 }
 
-/* フッターのスタイル */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.sys{
+  font-size:12px;
+  color:var(--sys-color);
+  padding-bottom:8px;
+}
+.info{
+  background:var(--theme-color);
 }
 
-/* メインコンテンツのスタイル */
-article {
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 5px;
+.flex{
+  display:flex;
+  justify-content:space-between;
+  gap:0.5rem;
 }
 
-/* ヘッダーとフッターのウィジェットエリアのスタイル */
-.widget {
-    padding: 10px;
-    background-color: #eaeaea;
-    margin-bottom: 10px;
-    border-radius: 5px;
+body{
+  background:var(--theme-color);
+  display:flex;
+  flex-direction:column;
 }
+main{
+  flex-grow:1;
+}
+.box{
+  max-width:640px;
+  margin:auto;
+}
+.box{
+}
+header p{
+  background:var(--theme-color);  
+}
+img{
+  width:100%;
+  object-fit:cover;
+}
+
+
+
+
+footer{
+  padding-bottom:10rem;
+  background:url('https://i.pinimg.com/736x/da/3c/d8/da3cd8d3a68e3a0d9bc9de583c83f7d9.jpg');
+  background-position:center;
+  background-position-y:34%;
+}
+footer .box p{
+  display:inline-block;
+  background-color:var(--theme-color);
+}
+
+#goto{
+  position:fixed;
+  width:48px;
+  height:48px;
+  border:3px solid white;
+  border-radius:50%;
+  background:var(--theme-color);
+  right:0.5rem;
+  bottom:0.5rem;
+  cursor:pointer;
+}
+a#goto:hover{
+  background:var(--mark-color);
+}
+a#goto:active{
+  opacity:0.6;  
+}
+
+
+
+.hide{display:none;}
+.long{height:200vh;}
+
+a.sys{
+  display: inline-flex;
+  align-items: center;
+  text-decoration:unset;
+}
+
+
+/*wpsandbox special*/
+ul#wp-admin-bar-top-secondary {
+    display: none;/**/
+}
+
+
+
+
+
+
+
