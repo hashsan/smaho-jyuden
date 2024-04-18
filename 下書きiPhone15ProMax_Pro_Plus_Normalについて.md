@@ -26,6 +26,6 @@ Type-CはUSBの規格の話で、USB3.1となります。
 
 
 ## 参考
-- ELECOM
+- [ELECOM](https://www.elecom.co.jp/pickup/usb_type-c/)
 - iPhone公式
 
