@@ -1,6 +1,6 @@
 # Lightning_Type-C_microUSBコネクタについてまとめ
 
-ここでは、現時点において主流である
+ここでは、現時点(2024年)において主流である
 - Lightningコネクタ
 - Type-Cコネクタ
 - microUSBコネクタ
