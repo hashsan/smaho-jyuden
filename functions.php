@@ -1,3 +1,4 @@
+<?php
 // ウィジェットエリアの登録
 function register_custom_sidebars() {
     // Header Widget Area
